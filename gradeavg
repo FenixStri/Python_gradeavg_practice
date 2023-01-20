@@ -1,0 +1,4 @@
+grades = [90, 85, 92, 88, 75]
+average = sum(grades) / len(grades)
+
+print("The average grade is: {:.2f}".format(average))
