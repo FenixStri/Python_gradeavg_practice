@@ -1,4 +1,16 @@
-grades = [90, 85, 92, 88, 75]
-average = sum(grades) / len(grades)
+total=0
+for i in range(5):
+    grade = int(input("Enter grade {}: ".format(i+1)))
+    grades.append(grade)
+    total += grade
+average = total/len(grades)
+while True:
+    try:
+        grade = int(input("Enter grade {}: ".format(i+1)))
+        grades.append(grade)
+        total += grade
+        break
+    except ValueError:
+        print("Invalid input! Please enter a number.")
 
 print("The average grade is: {:.2f}".format(average))
