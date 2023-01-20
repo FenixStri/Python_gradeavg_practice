@@ -1,16 +1,13 @@
-total=0
+grades = []
+total = 0
 for i in range(5):
-    grade = int(input("Enter grade {}: ".format(i+1)))
-    grades.append(grade)
-    total += grade
-average = total/len(grades)
 while True:
-    try:
-        grade = int(input("Enter grade {}: ".format(i+1)))
-        grades.append(grade)
-        total += grade
-        break
-    except ValueError:
-        print("Invalid input! Please enter a number.")
-
+       try:
+               grade = int(input("Enger grade {}:".format(i+1)))
+            grades.append(grade)
+            total += grade
+            break
+        except ValueError:
+            print("Invalid input! Please enter a number.").
+average = total/len(grades)
 print("The average grade is: {:.2f}".format(average))
