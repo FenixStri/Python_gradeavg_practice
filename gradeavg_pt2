@@ -1,0 +1,7 @@
+total=0
+for i in range(len(grades)):
+  grade = int(input("Enter grade{}:".format(i+1)))
+  grades.append(grade)
+  total += grade
+  average = total/len(grades)
+  
